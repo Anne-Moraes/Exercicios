@@ -11,7 +11,7 @@ namespace _1038_Bee_Crowd
     {
         static void Main(string[] args)
         {
-            snackProgram();
+         
 
             /* Using the following table, write a program that reads a code and the amount of an item. 
             After, print the value to pay. This is a very simple program with the only intention of practice of 
@@ -24,9 +24,7 @@ namespace _1038_Bee_Crowd
             Output
             The output must be a message "Total: R$ " followed by the total value to be paid, with 2 digits after the 
             decimal point.*/
-        }
-        static void snackProgram()
-        {
+        
             int x, y;
             double price;
 

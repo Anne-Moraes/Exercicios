@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _1018_Bee_Crowd
 {
-    internal class Grades
+    internal class Banknotes
     {
         static void Main(string[] args)
         {

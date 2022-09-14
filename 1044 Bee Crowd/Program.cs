@@ -11,7 +11,6 @@ namespace _1044_Bee_Crowd
     {
         static void Main(string[] args)
         {
-            multiplesProgram();
 
             /* Read two nteger values (A and B). After, the program should print the message "Sao Multiplos" 
             (are multiples) or "Nao sao Multiplos" (aren’t multiples), corresponding to the read values.
@@ -21,9 +20,7 @@ namespace _1044_Bee_Crowd
 
             Output
             Print the relative message to the input as stated above.*/
-        }
-        static void multiplesProgram()
-        {
+
             int a, b;         
 
             string[] vet = Console.ReadLine().Split(' ');
