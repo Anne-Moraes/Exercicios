@@ -5,29 +5,42 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace _1038_Bee_Crowd
+namespace _1044_Bee_Crowd
 {
-    internal class Snack
+    internal class Multiples
     {
         static void Main(string[] args)
         {
-            snackProgram();
+            multiplesProgram();
 
-            /* Using the following table, write a program that reads a code and the amount of an item. 
-            After, print the value to pay. This is a very simple program with the only intention of practice of 
-            selection commands.
+            /* Read two nteger values (A and B). After, the program should print the message "Sao Multiplos" 
+            (are multiples) or "Nao sao Multiplos" (aren’t multiples), corresponding to the read values.
 
             Input
-            The input file contains two integer numbers X and Y. X is the product code and Y is the quantity of this 
-            item according to the above table.
+            The input has two integer numbers.
 
             Output
-            The output must be a message "Total: R$ " followed by the total value to be paid, with 2 digits after the 
-            decimal point.*/
+            Print the relative message to the input as stated above.*/
         }
-        static void snackProgram()
+        static void multiplesProgram()
         {
-            
+            int a, b;         
+
+            string[] vet = Console.ReadLine().Split(' ');
+
+            a = int.Parse(vet[0]);
+            b = int.Parse(vet[1]);
+
+            if (a % b == 0 || b % a == 0)
+            {
+                Console.WriteLine("Are multiples");
+            }
+            else
+            {
+                Console.WriteLine("Aren’t multiples");
+            }
+
+
         }
     }
 }

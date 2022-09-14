@@ -4,51 +4,59 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _118_Bee_Crowd
+namespace _1018_Bee_Crowd
 {
-    internal class Notas
+    internal class Grades
     {
         static void Main(string[] args)
         {
-            calculoNotas();
+            
+            /* In this problem you have to read an integer value and calculate the smallest possible number of banknotes in 
+            which the value may be decomposed. The possible banknotes are 100, 50, 20, 10, 5, 2 e 1. Print the read value and
+            the list of banknotes.
 
-            /* Neste problema você tem que ler um valor inteiro e calcular o menor número possível de notas 
-             em que o valor pode ser decomposto. As notas possíveis são 100, 50, 20, 10, 5, 2 e 1.Imprima o 
-             valor lido e a lista de notas.
+            Input
+            The input file contains an integer value N (0 < N < 1000000).
 
-            Entrada
-            O arquivo de entrada contém um valor inteiro N(0 < N < 1000000).
+            Output
+            Print the read number and the minimum quantity of each necessary banknotes in Portuguese language, as the given example.
+            Do not forget to print the end of line after each line, otherwise you will receive “Presentation Error”. . */         
+            
+            int n, oneHundred, fifty, twenty, ten, five, two, one, rest;
 
-            Resultado
-            Imprima o número lido e a quantidade mínima de cada cédula necessária em língua portuguesa, 
-            conforme o exemplo dado.Não se esqueça de imprimir o final de linha após cada linha, caso 
-            contrário você receberá “Erro de apresentação” . */
-        }
-        static void calculoNotas()
-        {
-            int n, cem, cinquenta, vinte, dez, cinco, dois, um, resto;
+            Console.WriteLine("Enter the value you want to decompose");
 
             n = int.Parse(Console.ReadLine());
-            resto = n;
+            rest = n;
 
             if (0 < n && n < 100000)
             {
-                cem = n / 100;
-                resto = resto % 100;
-                cinquenta = resto / 50;
-                resto = resto % 50;
-                vinte = resto / 20;
-                resto = resto % 20;
-                dez = resto / 10;
-                resto = resto % 10;
-                cinco = resto / 5;
-                resto = resto % 5;
-                dois = resto / 2;
-                resto = resto % 2;
-                um = resto / 1;
-                Console.WriteLine($"{cem} nota(s) de R$ 100,00 \n{cinquenta} nota(s) de R$ 50,00 \n{vinte} nota(s) de R$ 20,00 \n{dez} nota(s) de R$ 10,00 \n{cinco} nota(s) de R$ 5,00 \n{dois} nota(s) de R$ 2,00 \n{um} nota(s) de R$ 1,00");                
+                oneHundred = n / 100;
+                rest = rest % 100;
+
+                fifty = rest / 50;
+                rest = rest % 50;
+
+                twenty = rest / 20;
+                rest = rest % 20;
+
+                ten = rest / 10;
+                rest = rest % 10;
+
+                five = rest / 5;
+                rest = rest % 5;
+
+                two = rest / 2;
+                rest = rest % 2;
+
+                one = rest / 1;
+
+                Console.WriteLine($"{n} \n{oneHundred} banknote(s) de R$ 100,00 \n{fifty} banknote(s) de R$ 50,00 " +
+                    $"\n{twenty} banknote(s) de R$ 20,00 \n{ten} banknote(s) de R$ 10,00 \n{five} banknote(s) de R$ 5,00 " +
+                    $"\n{two} banknote(s) de R$ 2,00 \n{one} banknote(s) de R$ 1,00");                
             }
-            else;       
+            else;  
+            
         }
     }
 }
