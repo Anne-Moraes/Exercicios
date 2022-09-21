@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Globalization;
 
 namespace _1046_Bee_Crowd
 {
@@ -46,15 +41,14 @@ namespace _1046_Bee_Crowd
             else 
             {
                 time = 24;
-            }            
+            }
 
             if (time <= 24)
             {
                 Console.WriteLine($"O JOGO DUROU {time} HORA(S)");
             }
-            else
-            
-            Console.ReadLine();
+            else;
+ 
         }
     }
 }
