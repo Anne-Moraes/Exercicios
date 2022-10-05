@@ -24,8 +24,6 @@ namespace _1018_Bee_Crowd
             
             int n, oneHundred, fifty, twenty, ten, five, two, one, rest;
 
-            Console.WriteLine("Enter the value you want to decompose");
-
             n = int.Parse(Console.ReadLine());
             rest = n;
 
@@ -51,9 +49,9 @@ namespace _1018_Bee_Crowd
 
                 one = rest / 1;
 
-                Console.WriteLine($"{n} \n{oneHundred} banknote(s) de R$ 100,00 \n{fifty} banknote(s) de R$ 50,00 " +
-                    $"\n{twenty} banknote(s) de R$ 20,00 \n{ten} banknote(s) de R$ 10,00 \n{five} banknote(s) de R$ 5,00 " +
-                    $"\n{two} banknote(s) de R$ 2,00 \n{one} banknote(s) de R$ 1,00");                
+                Console.WriteLine($"{n} \n{oneHundred} banknote(s) from R$ 100,00 \n{fifty} banknote(s) from R$ 50,00 " +
+                    $"\n{twenty} banknote(s) from R$ 20,00 \n{ten} banknote(s) from R$ 10,00 \n{five} banknote(s) from R$ 5,00 " +
+                    $"\n{two} banknote(s) from R$ 2,00 \n{one} banknote(s) from R$ 1,00");                
             }
             else;  
             

@@ -23,18 +23,15 @@ namespace _1011_Bee_Crowd
             Output
             The output must be a message "VOLUME" like the following example with a space before 
             and after the equal signal. The value must be presented with 3 digits after the decimal 
-            point. */
+            point. */           
 
-            Console.WriteLine("Enter radius number to calculate sphere volume:");
-
-            double pi, radius, volume;
-
-            pi = 3.14159;
+            double radius, volume;
+           
             radius = double.Parse(Console.ReadLine());
 
-            volume = (4.0/3) * pi * (radius * radius * radius);
+            volume = (4.0/3) * 3.14159 * (radius * radius * radius);
 
-            Console.WriteLine($"Volume: {volume.ToString("F3")}");
+            Console.WriteLine($"VOLUME = {volume.ToString("F3")}");
         }
     }
 }

@@ -18,37 +18,25 @@ namespace _1046_Bee_Crowd
             Output
             Print the duration of the game as in the sample output.
              */
-                
+
             int start, end, time;
 
-            Console.WriteLine("Enter the number of hours from the start of the game");
-
-            start = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the number of hours from the end of the game.");
-            end = int.Parse(Console.ReadLine());
+            string[] values = Console.ReadLine().Split(' ');
+            start = int.Parse(values[0]);
+            end = int.Parse(values[1]);
 
             time = 0;
-                          
-            if(start < end)
+
+            if (start < end)
             {
-                time = end - start;  
+                time = end - start;
             }
-            else if (start > end)
+            else
             {
                 time = 24 - start + end;
             }
-            else 
-            {
-                time = 24;
-            }
 
-            if (time <= 24)
-            {
-                Console.WriteLine($"O JOGO DUROU {time} HORA(S)");
-            }
-            else;
- 
-        }
+            Console.WriteLine($"THE GAME LASTED {time} HOUR(S)");
+    }
     }
 }

@@ -55,7 +55,7 @@ namespace _1038_Bee_Crowd
             {
                 price = y * 1.5;
             }
-            Console.WriteLine($"Total: R$ {price.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Total: R$ {price.ToString("F2")}");
         }
     }
 }

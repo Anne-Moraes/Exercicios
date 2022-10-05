@@ -24,21 +24,18 @@ namespace uri1015
 
             double x1, x2, y1, y2, distance;
 
-            Console.WriteLine("To calculate distance enter:");
-
-            Console.WriteLine("The first values of x and y respectively.");
             string[] values = Console.ReadLine().Split(' ');
-            x1 = double.Parse(values[0], CultureInfo.InvariantCulture);
-            y1 = double.Parse(values[1], CultureInfo.InvariantCulture);
+            x1 = double.Parse(values[0]);
+            y1 = double.Parse(values[1]);
 
-            Console.WriteLine("The second values of x and y respectively");
+
             values = Console.ReadLine().Split(' ');
-            x2 = double.Parse(values[0], CultureInfo.InvariantCulture);
-            y2 = double.Parse(values[1], CultureInfo.InvariantCulture);
+            x2 = double.Parse(values[0]);
+            y2 = double.Parse(values[1]);
 
             distance = Math.Sqrt(Math.Pow(x2 - x1, 2.0) + Math.Pow(y2 - y1, 2.0));
 
-            Console.WriteLine($"Distance = {distance.ToString("F4")}");
+            Console.WriteLine(distance.ToString("F4"));
         }
     }
 }

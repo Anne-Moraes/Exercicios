@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace _1046_Bee_Crowd
+namespace _1049_Bee_Crowd
 {
-    internal class GameTime
+    internal class Animal
     {
         static void Main(string[] args)
         {
@@ -18,14 +18,11 @@ namespace _1046_Bee_Crowd
             Print the animal name according to the given input.*/
 
             string structure, animalClass, diet;
-
-            Console.WriteLine("What is the animal's structure?");
+            
             structure = Console.ReadLine();
 
-            Console.WriteLine("What is the animal's class?");
             animalClass = Console.ReadLine();   
 
-            Console.WriteLine("What is the animal's diet?");
             diet = Console.ReadLine();
 
             if(structure == "vertebrate")
@@ -46,6 +43,7 @@ namespace _1046_Bee_Crowd
                 {
                     Console.WriteLine("This Animal is a Cow");
                 }
+                else Console.WriteLine("Não é nenuma das opções");
             }
             else if(structure == "invertebrate")
             {

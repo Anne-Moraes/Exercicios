@@ -19,20 +19,20 @@ namespace _1035_Bee_Crowd
             Output
             Show the corresponding message after the validation of the values​​. */
 
-            int a, b, c, d, sumCD, sumAB, rest;
+            int A, B, C, D, sumCD, sumAB, rest;
 
             string[] vet = Console.ReadLine().Split(' ');
-            a = int.Parse(vet[0]);
-            b = int.Parse(vet[1]);  
-            c = int.Parse(vet[2]);
-            d = int.Parse(vet[3]);
+            A = int.Parse(vet[0]);
+            B = int.Parse(vet[1]);  
+            C = int.Parse(vet[2]);
+            D = int.Parse(vet[3]);
 
-            sumAB = a + b;
-            sumCD = c + d;
+            sumAB = A + B;
+            sumCD = C + D;
 
-            rest = a % 2;
+            rest = A % 2;
 
-            if (b > c && d > a && sumCD > sumAB && c > 0 && d > 0 && rest == 0)
+            if (B > C && D > A && sumCD > sumAB && C > 0 && D > 0 && rest == 0)
             {
                 Console.WriteLine("Accepted values");
             }
